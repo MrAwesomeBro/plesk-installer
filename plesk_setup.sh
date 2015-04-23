@@ -21,12 +21,12 @@ Please run as root or the script cannot be used!\x1B[0m"
 fi
 
 # Performing update && upgrade and autoremove crap
-echo -e "\x1B[01;93m At frist you need to perform an update && upgrade.\x1B[0m
-echo "
+echo -e "\x1B[01;93m At frist you need to perform an update && upgrade.\x1B[0m"
+echo " "
 read -p "\x1B[01;93m Press any Key to perform an update && upgrade... \x1B[0m" -n1 -s
 		apt-get update && apt-get upgrade -y
-echo -e "\x1B[01;93m In case you did not remove old crap I will perform an "autoremove" right now.\x1B[0m
-echo "
+echo -e "\x1B[01;93m In case you did not remove old crap I will perform an "autoremove" right now.\x1B[0m"
+echo ""
 read -p "Press any key to continue..." -n1 -s
 	apt-get autoremove
 echo -e "\x1B[01;93m Done.\x1B[0m"
